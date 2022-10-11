@@ -12,15 +12,15 @@ class BooksController < ApplicationController
     end 
 
     def create 
-        book = Book.create!(book_params)
+        book = @user.book.create!(book_params)
         render json: book, status: :created 
     end 
 
-    def update 
-        book = find_book
-        book.update!(book_params)
-        render json: book 
-    end 
+    # def update 
+    #     book = find_book
+    #     book.update!(book_params)
+    #     render json: book 
+    # end 
 
     def destroy 
         book = find_book
