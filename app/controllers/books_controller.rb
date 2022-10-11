@@ -9,5 +9,20 @@ class BooksController < ApplicationController
         render json: book 
     end 
 
-    def 
+    def create 
+        book = Book.create!(book_params)
+        render json: book, status: :created 
+    end 
+
+    def update 
+        book = find_book
+        book.update!(book_params)
+        render json: book 
+    end 
+
+    def destroy 
+        book = find_book
+        book.destroy
+        head :no_content 
+    end 
 end
