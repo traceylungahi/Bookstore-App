@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :books 
   resources :users, only: [:show, :create]
-  resources :ratings, only: [:show, :create, :destroy]
+  resources :reviews, only: [:show, :create, :destroy]
 
   get '/me', to: 'users#show'
   post '/signup', to: 'users#create'

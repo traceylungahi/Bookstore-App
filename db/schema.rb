@@ -24,16 +24,16 @@ ActiveRecord::Schema.define(version: 2022_10_11_185047) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "ratings", force: :cascade do |t|
-    t.string "review"
-    t.string "description"
-    t.bigint "user_id", null: false
-    t.bigint "book_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["book_id"], name: "index_ratings_on_book_id"
-    t.index ["user_id"], name: "index_ratings_on_user_id"
-  end
+  # create_table "ratings", force: :cascade do |t|
+  #   t.string "review"
+  #   t.string "description"
+  #   t.bigint "user_id", null: false
+  #   t.bigint "book_id", null: false
+  #   t.datetime "created_at", precision: 6, null: false
+  #   t.datetime "updated_at", precision: 6, null: false
+  #   t.index ["book_id"], name: "index_ratings_on_book_id"
+  #   t.index ["user_id"], name: "index_ratings_on_user_id"
+  # end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -43,6 +43,6 @@ ActiveRecord::Schema.define(version: 2022_10_11_185047) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "ratings", "books"
-  add_foreign_key "ratings", "users"
+  # add_foreign_key "ratings", "books"
+  # add_foreign_key "ratings", "users"
 end
