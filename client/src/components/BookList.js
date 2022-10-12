@@ -6,7 +6,7 @@ function BookList({ books, onDeleteBook, onUpdateBook }) {
       {books.map((book) => {
         return (
           <BookHolder
-            key={plant.id}
+            key={book.id}
             book={book}
             onDeleteBook={onDeleteBook}
             onUpdateBook={onUpdateBook}
