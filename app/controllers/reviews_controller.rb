@@ -1,9 +1,9 @@
 class ReviewsController < ApplicationController
-    skip_before_action :authorize, only: [:create]
+    # skip_before_action :authorize, only: [:create]
 
     def index 
         reviews = Review.all 
-        render json: reviews 
+        render json: reviews, except: [:created_at, :updated_at]
     end 
 
     def show 

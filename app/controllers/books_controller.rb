@@ -1,9 +1,8 @@
 class BooksController < ApplicationController
-    rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response 
-
+ 
     def index 
         books = Book.all 
-        render json: books 
+        render json: books, except: [:created_at, :updated_at]
     end 
 
     def show 
@@ -38,7 +37,4 @@ class BooksController < ApplicationController
         params.permit(:name, :image, :description, :price)
     end 
 
-    def render_not_found_response
-        render json: { error: "Book not found" }, status: :not_found
-    end
 end
