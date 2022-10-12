@@ -17,4 +17,4 @@ function BookList({ books, onDeleteBook, onUpdateBook }) {
   );
 }
 
-export default PlantList;
+export default BookList;
