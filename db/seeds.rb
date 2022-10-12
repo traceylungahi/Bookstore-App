@@ -8,45 +8,45 @@
 
 Book.create!([
     {
-        name: "A Thousand Splendid Suns",
+        name: "River and the source",
         image: "https://images.pexels.com/photos/3358707/pexels-photo-3358707.png?auto=compress&cs=tinysrgb&w=300",
-        description: "A book written by Khaled Hosseini, released on May 22, 2007. It was New York Times Best Seller for 15 weeks following its release",
-        price: 20 
+        description: "A book written by Margaret Ogola",
+        price: 25
     },
     {
-        name: "A Grain Of Wheat",
+        name: "When the sun goes down",
         image: "https://images.pexels.com/photos/3358707/pexels-photo-3358707.png?auto=compress&cs=tinysrgb&w=300",
-        description: "A book written by Ngugi wa Thiong'o. It was published in 1967 by Heinemann. He wrote it while he was studying at Leeds University",
-        price: 15
+        description: "A book written by various authors.",
+        price: 20
     },
     {
-        name: "Half Of A Yellow Sun",
+        name: "Atomic habits",
         image: "https://images.pexels.com/photos/3358707/pexels-photo-3358707.png?auto=compress&cs=tinysrgb&w=300",
-        description: "A novel written by NIgerian author Chimamanda Ngozi Adichie. It was published in 2006 by 4th Estate in London. The novel tells the story of the Biafran War",
-        price: 15
-    }
+        description: "A novel written by a Nigerian author",
+        price: 10
+    },
     {
-        name: "Half Of A Yellow Sun",
+        name: "Mkurugenzi",
         image: "https://images.pexels.com/photos/3358707/pexels-photo-3358707.png?auto=compress&cs=tinysrgb&w=300",
-        description: "A novel written by NIgerian author Chimamanda Ngozi Adichie. It was published in 2006 by 4th Estate in London. The novel tells the story of the Biafran War",
-        price: 15
+        description: "A novel written by Zack",
+        price: 18
     }
 ])
 
-User.create!([
-    {
-        username: "bookworm",
-        bio: "find me lost in a book"
-    },
-    {
-        username: "reader123",
-        bio: "reading is the game"
-    }, 
-    {
-        username: "booklover", 
-        bio: "i love books"
-    }
-])
+# User.create!([
+#     {
+#         username: "bookworm",
+#         bio: "find me lost in a book"
+#     },
+#     {
+#         username: "reader123",
+#         bio: "reading is the game"
+#     }, 
+#     {
+#         username: "booklover", 
+#         bio: "i love books"
+#     }
+# ])
 
 Review.create!([
     {
