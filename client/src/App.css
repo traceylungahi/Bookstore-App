@@ -26,11 +26,11 @@
 
 .App-link {
   color: #61dafb;
+  align-items: center;
 }
 
-.header {
-  color: brown;
-  
+.Header {
+  color: #a52a2a;
  }
 
 @keyframes App-logo-spin {

@@ -11,6 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
- .header {
-  background-color: brown;
- }
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
