@@ -34,28 +34,28 @@ function AddBook ({ onAddBook }) {
                   type="text"
                   name="name"
                   placeholder="Book name"
-                //   value={name}
+                  value={name}
                   onChange={(event) => setName(event.target.value)}
                 />
                 <input
                   type="text"
                   name="image"
                   placeholder="Image"
-                //   value={image}
+                  value={image}
                   onChange={(event) => setImage(event.target.value)}
                 />
                 <input
                   type="text"
                   name="description"
                   placeholder="Descriprion"
-                //   value={description}
+                  value={description}
                   onChange={(event) => setDescription(event.target.value)}
                 />
                 <input
                   type="number"
                   name="price"
                   placeholder="Price"
-                //   value={price}
+                  value={price}
                   onChange={(event) => setPrice((event.target.value))}
                 />
                 <button type="submit">Add Book</button>

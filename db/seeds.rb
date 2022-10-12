@@ -25,6 +25,12 @@ Book.create!([
         description: "A novel written by NIgerian author Chimamanda Ngozi Adichie. It was published in 2006 by 4th Estate in London. The novel tells the story of the Biafran War",
         price: 15
     }
+    {
+        name: "Half Of A Yellow Sun",
+        image: "https://images.pexels.com/photos/3358707/pexels-photo-3358707.png?auto=compress&cs=tinysrgb&w=300",
+        description: "A novel written by NIgerian author Chimamanda Ngozi Adichie. It was published in 2006 by 4th Estate in London. The novel tells the story of the Biafran War",
+        price: 15
+    }
 ])
 
 User.create!([

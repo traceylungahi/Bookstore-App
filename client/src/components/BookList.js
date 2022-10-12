@@ -1,6 +1,7 @@
 import BookHolder from './BookHolder';
+import React from 'react';
 
-function BookList({ books, onDeleteBook, onUpdateBook }) {
+function BookList({ books, onDeleteBook }) {
   return (
     <ul className="cards">
       {books.map((book) => {
@@ -9,7 +10,7 @@ function BookList({ books, onDeleteBook, onUpdateBook }) {
             key={book.id}
             book={book}
             onDeleteBook={onDeleteBook}
-            onUpdateBook={onUpdateBook}
+            // onUpdateBook={onUpdateBook}
           />
         );
       })}
