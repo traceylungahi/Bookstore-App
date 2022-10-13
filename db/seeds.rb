@@ -22,7 +22,7 @@ Book.create!([
     {
         name: "Atomic habits",
         image: "https://images.pexels.com/photos/3358707/pexels-photo-3358707.png?auto=compress&cs=tinysrgb&w=300",
-        description: "A novel written by a Nigerian author",
+        description: "Great book",
         price: 10
     },
     {
