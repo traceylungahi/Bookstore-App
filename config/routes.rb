@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :books 
   resources :users, only: [:show, :create]
-  resources :reviews, only: [:index, :show, :create, :destroy]
+  resources :reviews, except: [:update]
 
   get '/me', to: 'users#show'
   post '/signup', to: 'users#create'
