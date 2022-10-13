@@ -12,7 +12,7 @@ function NavBar({ user, setUser }) {
     }
 
     return (
-        <div>
+        <div className='logout'>
             <button onClick={handleLogOut}>LogOut</button>
         </div>
     )

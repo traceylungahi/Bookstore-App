@@ -33,20 +33,20 @@ Book.create!([
     }
 ])
 
-# User.create!([
-#     {
-#         username: "bookworm",
-#         bio: "find me lost in a book"
-#     },
-#     {
-#         username: "reader123",
-#         bio: "reading is the game"
-#     }, 
-#     {
-#         username: "booklover", 
-#         bio: "i love books"
-#     }
-# ])
+User.create!([
+    {
+        username: "bookworm",
+        bio: "find me lost in a book"
+    },
+    {
+        username: "reader123",
+        bio: "reading is the game"
+    }, 
+    {
+        username: "booklover", 
+        bio: "i love books"
+    }
+])
 
 Review.create!([
     {

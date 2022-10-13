@@ -1,5 +1,5 @@
-function BookHolder({ book, onDeleteBook }) {
-    const { id, name, image, price, description } = book;
+function BookHolder({ book, onDeleteBook, onUpdateBook }) {
+    const { id, name, image, price, description, available: available } = book;
   
     function handleDeleteClick() {
       fetch(`/books/${id}`, {
@@ -11,19 +11,19 @@ function BookHolder({ book, onDeleteBook }) {
       });
     }
   
-    // function handleIsInStockClick() {
-    //   fetch(`/books/${id}`, {
-    //     method: "PATCH",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify
-    //   })
-    //     .then((response) => response.json())
-    //     .then((updatedBook) => {
-    //       onUpdateBook(updatedBook);
-    //     });
-    // }
+    function handleAvailableClick() {
+      fetch(`/books/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ available: !available }),
+      })
+        .then((response) => response.json())
+        .then((updatedBook) => {
+          onUpdateBook(updatedBook);
+        });
+    }
   
     return (
       <li className="card">
@@ -33,13 +33,13 @@ function BookHolder({ book, onDeleteBook }) {
         <br /> 
         <button className="primary">Price: ${price}</button>
         <br /> 
-        {/* {isInStock ? (
-          <button className="primary" onClick={handleIsInStockClick}>
-            In Stock
+        {available ? (
+          <button className="primary" onClick={handleAvailableClick}>
+            Available
           </button>
         ) : (
-          <button onClick={handleIsInStockClick}>Out of Stock</button>
-        )} */}
+          <button onClick={handleAvailableClick}>Unavailable</button>
+        )}
         <button className="primary" onClick={handleDeleteClick}>Delete</button>
       </li>
     );

@@ -16,11 +16,11 @@ class BooksController < ApplicationController
         render json: book, status: :created 
     end 
 
-    # def update 
-    #     book = find_book
-    #     book.update!(book_params)
-    #     render json: book 
-    # end 
+    def update 
+        book = find_book
+        book.update!(book_params)
+        render json: book 
+    end 
 
     def destroy 
         book = find_book
@@ -35,7 +35,7 @@ class BooksController < ApplicationController
     end 
 
     def book_params
-        params.permit(:name, :image, :description, :price)
+        params.permit(:name, :image, :description, :price, :available)
     end 
 
 end
