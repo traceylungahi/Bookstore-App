@@ -4,7 +4,6 @@ function SignUp({ onLogin }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
-    // const [bio, setBio] = useState("");
     const [errors, setErrors] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
   
@@ -21,7 +20,6 @@ function SignUp({ onLogin }) {
           username,
           password,
           password_confirmation: passwordConfirmation,
-        //   bio,
         }),
       }).then((response) => {
         setIsLoading(false);
@@ -40,7 +38,7 @@ function SignUp({ onLogin }) {
                 <hr />
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label for="username">Username</label>
+                        <label htmlFor="username">Username</label>
                         <input 
                         type="text"
                         id="username"
@@ -49,7 +47,7 @@ function SignUp({ onLogin }) {
                         />
                     </div>
                     <div className="form-group">
-                        <label for="password">Password</label>
+                        <label htmlFor="password">Password</label>
                         <input 
                         type="password"
                         id="password"
@@ -58,7 +56,7 @@ function SignUp({ onLogin }) {
                         />
                     </div>
                     <div className="form-group">
-                        <label for="password">Password Confirmation</label>
+                        <label htmlFor="password">Password Confirmation</label>
                         <input 
                         type="password"
                         id="password_confirmation"

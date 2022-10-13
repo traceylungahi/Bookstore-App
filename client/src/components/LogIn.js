@@ -36,7 +36,7 @@ function LogIn({ onLogin }) {
                 <hr />
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label for="username">Username</label>
+                        <label htmlFor="username">Username</label>
                         <input 
                         type="text"
                         id="username"
@@ -45,7 +45,7 @@ function LogIn({ onLogin }) {
                         />
                     </div>
                     <div className="form-group">
-                        <label for="password">Password</label>
+                        <label htmlFor="password">Password</label>
                         <input 
                         type="password"
                         id="password"

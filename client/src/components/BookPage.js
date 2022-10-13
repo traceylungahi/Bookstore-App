@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AddBook from './AddBook';
 import BookList from './BookList';
-import SignUp from "./SignUp";
+// import LogIn from "./LogIn";
+// import SignUp from "./SignUp";
 // import Search from "./Search";
 
 function BookPage() {
@@ -41,7 +42,8 @@ function BookPage() {
 
   return (
     <main>
-      <SignUp />
+      {/* <SignUp />
+      <LogIn />  */}
       <AddBook onAddBook={handleAddBook} />
       {/* <Search searchTerm={searchTerm} onSearchChange={setSearchTerm} /> */}
       <BookList

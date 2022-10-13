@@ -8,7 +8,7 @@ import BookPage from './components/BookPage';
 function App() {
   return (
 
-    <div classname='App'>
+    <div className='App'>
       <Header />
       {/* <BookList /> */}
       <BookPage />

@@ -28,5 +28,27 @@ header h1 {
   margin: 2rem 1;
   background-color: rgba(175, 106, 106, 0.24);
   font-family: 'Dancing Script', cursive;
-  
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.form-group {
+  /* font-family: 'Nunito Sans', sans-serif;
+  background-color: rgb(2, 22, 54);
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center */
+}
+
+.card {
+  align-items: center;
+  justify-content: center
+}
+
+.primary {
+  align-items: center;
+  justify-content: center
 }

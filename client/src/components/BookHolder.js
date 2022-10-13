@@ -27,10 +27,12 @@ function BookHolder({ book, onDeleteBook }) {
   
     return (
       <li className="card">
+        <h2>{name}</h2>
+        <h4>{description}</h4>
         <img src={image} alt={name} />
-        <h4>{name}</h4>
-        <h2>{description}</h2>
+        <br /> 
         <button className="primary">Price: ${price}</button>
+        <br /> 
         {/* {isInStock ? (
           <button className="primary" onClick={handleIsInStockClick}>
             In Stock
@@ -39,7 +41,6 @@ function BookHolder({ book, onDeleteBook }) {
           <button onClick={handleIsInStockClick}>Out of Stock</button>
         )} */}
         <button className="primary" onClick={handleDeleteClick}>Delete</button>
-        <br />
       </li>
     );
   }
