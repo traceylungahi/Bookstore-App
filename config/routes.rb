@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 
   resources :books 
-  resources :users, only: [:show, :create]
+  resources :users, only: [:index, :show, :create]
   resources :reviews, except: [:update]
 
   get '/me', to: 'users#show'

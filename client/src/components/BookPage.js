@@ -29,12 +29,12 @@ function BookPage() {
     setBooks(updatedBooksArray);
   }
 
-//   function handleUpdateBook(updatedBook) {
-//     const updatedBooksArray = books.map((book) => {
-//       return book.id === updatedBook.id ? updatedBook : book;
-//     });
-//     setBooks(updatedBooksArray);
-//   }
+  function handleUpdateBook(updatedBook) {
+    const updatedBooksArray = books.map((book) => {
+      return book.id === updatedBook.id ? updatedBook : book;
+    });
+    setBooks(updatedBooksArray);
+  }
 
 //   const displayedBooks = books.filter((book) => {
 //     return book.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -49,7 +49,7 @@ function BookPage() {
       <BookList
         books={books}
         onDeleteBook={handleDeleteBook}
-        // onUpdateBook={handleUpdateBook}
+        onUpdateBook={handleUpdateBook}
       />
     </main>
   );

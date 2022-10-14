@@ -6,7 +6,7 @@ function AddBook ({ onAddBook }) {
     const [description, setDescription] = useState("");
     const [price, setPrice] = useState("");
 
-    function handleClick(event) {
+    function handleSubmit(event) {
         event.preventDefault()
         const newBook = {
           name,
@@ -24,12 +24,17 @@ function AddBook ({ onAddBook }) {
         })
         .then((response) => response.json())
         .then((newBook) => onAddBook(newBook));
-    }
+
+        setName("")
+        setImage("")
+        setDescription("")
+        setPrice("")
+      }
 
     return (
         <div className="New-book">
             <h4>Add Book</h4>
-            <form onClick={handleClick}>
+            <form onSubmit={handleSubmit}>
                 <input 
                   type="text"
                   name="name"
@@ -63,4 +68,5 @@ function AddBook ({ onAddBook }) {
         </div>
     )
 }
- export default AddBook;
+
+export default AddBook;

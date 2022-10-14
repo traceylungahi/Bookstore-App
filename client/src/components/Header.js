@@ -1,12 +1,10 @@
 import React from 'react';
-import LogIn from "./LogIn";
-import SignUp from "./SignUp";
+// import LogIn from "./LogIn";
+// import SignUp from "./SignUp";
 
 function Header() {
     return (
-        <main>
-            <SignUp />
-            <LogIn />        
+        <main>  
             <header>
                 <h1>
                     Elite Books 

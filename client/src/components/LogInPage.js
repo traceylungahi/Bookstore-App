@@ -11,9 +11,9 @@ function LogInPage({ onLogIn }) {
             {logIn ? (
             <>
             <LogIn onLogin={onLogIn} />
-                <p>
+                <p className="p">
                     Don't have an account? &nbsp;
-                    <button color="primary" onClick={() => setLogIn(false)}>
+                    <button className="signup" color="primary" onClick={() => setLogIn(false)}>
                         SignUp
                     </button>
                 </p>
@@ -23,7 +23,7 @@ function LogInPage({ onLogIn }) {
                 <SignUp onLogin={onLogIn} />
                 <p>
                     Already got an account? &nbsp;
-                    <button color="primary" onClick={() => setLogIn(false)}>
+                    <button className="login" color="primary" onClick={() => setLogIn(true)}>
                         LogIn
                     </button>
                 </p>
