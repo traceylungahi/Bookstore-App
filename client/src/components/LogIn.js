@@ -34,8 +34,8 @@ function LogIn({ onLogin }) {
             <div className="border">
                 <h3>Log In</h3>
                 <hr />
-                <form onSubmit={handleSubmit}>
-                    <div className="form-group">
+                <form className="form-group" onSubmit={handleSubmit}>
+                    <div>
                         <label className="form-label">Username</label>
                         <input 
                         type="text"
@@ -44,7 +44,7 @@ function LogIn({ onLogin }) {
                         onChange={(event) => setUsername(event.target.value)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div >
                         <label className="form-label">Password</label>
                         <input 
                         type="password"

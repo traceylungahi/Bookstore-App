@@ -36,8 +36,8 @@ function SignUp({ onLogin }) {
             <div className="border">
                 <h3>Sign Up</h3>
                 <hr />
-                <form onSubmit={handleSubmit}>
-                    <div className="form-group">
+                <form className="form-group" onSubmit={handleSubmit}>
+                    <div>
                         <label htmlFor="username">Username</label>
                         <input 
                         type="text"
@@ -46,7 +46,7 @@ function SignUp({ onLogin }) {
                         onChange={(event) => setUsername(event.target.value)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div>
                         <label htmlFor="password">Password</label>
                         <input 
                         type="password"
@@ -55,7 +55,7 @@ function SignUp({ onLogin }) {
                         onChange={(event) => setPassword(event.target.value)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div>
                         <label htmlFor="password">Password Confirmation</label>
                         <input 
                         type="password"
