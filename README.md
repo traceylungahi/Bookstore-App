@@ -1,9 +1,10 @@
-# Project Template: React/Rails API
+# Bookstore App 
 
 ## Description
 
-This project is scaffolded so that you can build a React frontend and Rails
-backend together, and easily deploy them to Heroku.
+This is a simple app that depicts a bookstore using a React frontend and Rails backend together, and a postgres server. 
+
+The app includes CRUD operations that enables the user to carry out various actions on the app. For example, GET, POST etc.
 
 ## Requirements
 
@@ -28,20 +29,7 @@ $ git remote rm origin
 
 Then, [create a new remote repository][create repo] on GitHub. Head to
 [github.com](https://github.com) and click the **+** icon in the top-right
-corner and follow the steps to create a new repository. **Important**: don't
-check any of the options such as 'Add a README file', 'Add a .gitignore file',
-etc — since you're importing an existing repository, creating any of those files
-on GitHub will cause issues.
-
-[create repo]: https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line#adding-a-project-to-github-without-github-cli
-
-If you're working with a partner,
-[add them as a collaborator][add collaborator] on GitHub. From your repo on
-GitHub, go to Settings > Manage Access > Invite a collaborator and enter your
-partner's username. Once your partner has access, they should git **clone** (not
-fork) the repository.
-
-[add collaborator]: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository
+corner and follow the steps to create a new repository. 
 
 Finally, connect the GitHub remote repository to your local repository and push
 up your code:
@@ -65,20 +53,16 @@ You can use the following commands to run the application:
 - `npm start --prefix client`: run the frontend on
   [http://localhost:4000](http://localhost:4000)
 
-Make sure to also update this README to include documentation about
-your project. Here's a list of some [awesome readmes][] for inspiration.
+
 
 [awesome readmes]: https://github.com/matiassingers/awesome-readme
 
 ## Deploying
 
-This application has all the starter code needed to help you deploy your
-application to Heroku. It's recommended to deploy your project early and push up
-changes often to ensure that your code works equally well in production and
-development environments.
+This application has all the starter code needed to help you deploy your application to Heroku. It's recommended to deploy your project early and push up
+changes often to ensure that your code works equally well in production and development environments.
 
-If you've already set up your environment to deploy to Heroku, you can run the
-commands below to deploy your application. If not, make sure to check out the
+If you've already set up your environment to deploy to Heroku, you can run the commands below to deploy your application. If not, make sure to check out the
 Environment Setup section below.
 
 To deploy, first log in to your Heroku account using the Heroku CLI:
@@ -114,9 +98,7 @@ git push heroku main
 > `git branch --show-current`. If it's `master`, you'll need to run
 > `git push heroku master` instead.
 
-Any time you have changes to deploy, just make sure your changes are committed
-on the main branch of your repo, and push those changes to Heroku to deploy
-them.
+Any time you have changes to deploy, just make sure your changes are committed on the main branch of your repo, and push those changes to Heroku to deploy them.
 
 You can view your deployed app with:
 
@@ -325,3 +307,13 @@ For additional support, check out these guides on Heroku:
 [postgres downloads page]: https://postgresapp.com/downloads.html
 [heroku rails deploying guide]: https://devcenter.heroku.com/articles/getting-started-with-rails6
 [troubleshooting guide on heroku]: https://devcenter.heroku.com/articles/getting-started-with-rails6#troubleshooting
+
+##Author
+[Tracey Lung'ahi](https://github.com/traceylungahi/)
+
+##Github Code
+
+https://github.com/traceylungahi/Bookstore-App
+
+##Licence 
+[MIT](https://choosealicence.com/licences/mit/) 
